@@ -1,0 +1,55 @@
+.bar {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    margin: 5px;
+    height: 120px;
+    max-width: calc(100vw - 10px);
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    float: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 15px;
+    margin-left: auto;
+    position: sticky;
+}
+
+.gptbar {
+    background-image: linear-gradient(to right, purple, blue);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    overflow-x: auto;
+    height: 50px;
+    max-width: calc(100vw - 10px);
+    border-style: solid;
+    border-radius: 15px;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.genButton {
+    border: solid 2px rgb(0,0,0);
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    height: 20px;
+    width: 80px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.gptSpeech {
+    filter: invert(100%);
+}
