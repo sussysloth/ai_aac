@@ -4,6 +4,8 @@
 import SentenceBarCSS from './SentenceBar.module.css';
 import WordCard from './WordCard.js';
 import Clear from './Clear.js';
+import Speech from './Speech.js';
+import BackSpace from './BackSpace.js';
 
 /*
 import Clear from './Clear.js';
@@ -28,9 +30,9 @@ const SentenceBar = ({ selectedWords , func, backFunc, clearFunc, speechFunc}) =
             {/*Add a backspace word and a delete everything button*/}
             <div className={SentenceBarCSS.buttons}>
 
-                <h1>Back</h1>
+                <BackSpace remove={() => backFunc()} />
                 <Clear clear={() => clearFunc()} />
-                <h1>Talk</h1>
+                <Speech talk={() => speechFunc()}/>
 
                 {/* 
 

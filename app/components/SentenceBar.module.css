@@ -33,8 +33,10 @@
     border-style: solid;
     border-radius: 15px;
     align-items: center;
-
+    font-size: 38px;
     justify-content: space-between;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .genButton {
