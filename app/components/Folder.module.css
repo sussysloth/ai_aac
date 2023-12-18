@@ -1,0 +1,56 @@
+.big {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .folder {
+      width: calc((100vw / 6) - 17px); /* Adjust the width as needed */
+      height: calc(.7 * ((100vw / 6) - 17px)); /* Adjust the height as needed */
+      background-color: #93bcf5; /* Folder background color */
+      border-left: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+      border-bottom: 2px solid #ccc; /* Folder border */
+      position: relative; /* Position for pseudo-element */
+      margin: 5px;
+      margin-bottom: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    /* Folder corner */
+    .folder::before {
+      content: "";
+      width: calc(.5 * ((100vw / 6) - 17px));
+      height: calc(.1 * ((100vw / 6) - 17px));
+      border-top: 18px solid #93bcf5; /* Match the folder background color */
+      position: absolute;
+      top: -18px; /* Adjust the distance from the top as needed */
+      left: -2px;
+      border-radius: 10px; /* Apply border-radius to create rounded corners */
+  }
+  
+  .folder Image {
+    max-height: calc(.5 * ((100vw / 6) - 17px));
+    max-width: calc(.5 * ((100vw / 6) - 17px));
+    margin-top: 10px;
+  }
+  
+  .folder h {
+    font-weight: bold;
+    font-size: calc(.07 * ((100vw / 6) - 17px));
+    margin-bottom: 15px;
+  }
+  
+  .contents {
+  /*when you make the actual ap research app, make sure u change/fix the width css */
+      width: calc(90vw - ((100vw / 6) - 17px)); 
+      margin-left: auto;
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: transparent;
+  }

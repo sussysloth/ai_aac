@@ -10,3 +10,12 @@
     font-weight: bold;
     font-size: 4vh;
   }
+
+  .container {
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: auto;
+  }
+  

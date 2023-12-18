@@ -4,6 +4,7 @@ import { useState , useEffect } from 'react';
 import AppCSS from './App.module.css';
 import SentenceBar from './components/SentenceBar';
 import GPTbar from './components/GPTbar';
+import WordsBox from './components/WordsBox';
 
 export default function Home() {
 
@@ -58,6 +59,12 @@ const [sentence, setSentence] = useState('Dummy GPT text');
 
           <div className={AppCSS.topBar}>
                 <h>TurboTalk</h>
+          </div>
+
+          {/* NOW FOR THE WORDSBOX*/}
+
+          <div className={AppCSS.container}>
+            <WordsBox func={handleWordClick}/>
           </div>
       </>
 
