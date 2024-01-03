@@ -1,3 +1,5 @@
+GPT3-based AAC application for use in my research project.  im testing the effectiveness of AI-powered AACs on speech-impaired adolescent conversational skills.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
