@@ -30,12 +30,21 @@ const WordsBox = (props) => {
         },
         {
             isFolder: true,
-            folderName: 'Question',
+            folderName: 'Questions',
             contents: ["who", "what", "where", "when", "why", "how", "how long"]
         },
         {
             isFolder: false,
             wordDisplayed: 'yes'
+        },
+        {
+            isFolder: false,
+            wordDisplayed: 'no'
+        },
+        {
+            isFolder: true,
+            folderName: 'Food',
+            contents: ["breakfast", "lunch", "dinner", "snack", "vegetable", "meat", "apple"]
         },
     ];
 
