@@ -48,7 +48,7 @@ const WordsBox = (props) => {
         },
         {
             isFolder: false,
-            wordDisplayed: "gyatt"
+            wordDisplayed: "Help"
         }
     ];
 
