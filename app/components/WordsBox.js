@@ -31,7 +31,7 @@ const WordsBox = (props) => {
         {
             isFolder: true,
             folderName: 'Questions',
-            contents: ["who", "what", "where", "when", "why", "how", "how long"]
+            contents: ["who", "what", "where", "when", "why", "how", "how long", ]
         },
         {
             isFolder: false,
@@ -46,6 +46,10 @@ const WordsBox = (props) => {
             folderName: 'Food',
             contents: ["breakfast", "lunch", "dinner", "snack", "vegetable", "meat", "apple"]
         },
+        {
+            isFolder: false,
+            wordDisplayed: "gyatt"
+        }
     ];
 
     return (
