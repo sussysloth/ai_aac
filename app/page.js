@@ -11,7 +11,7 @@ export default function Home() {
 //variables useState
 
 
-const [selectedWords, setSelectedWords] = useState(["I", "love", "you"]); //the words the user picked
+const [selectedWords, setSelectedWords] = useState([]); //the words the user picked
 
 //the gpt-generated sentence
 const [sentence, setSentence] = useState('Dummy GPT text');
