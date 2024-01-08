@@ -1,5 +1,7 @@
 "use client"
 import { useState , useEffect } from 'react';
+import { useCompletion } from "ai/react";
+import { useRouter } from 'next/navigation';
 
 import AppCSS from './App.module.css';
 import SentenceBar from './components/SentenceBar';
@@ -7,9 +9,6 @@ import GPTbar from './components/GPTbar';
 import WordsBox from './components/WordsBox';
 
 export default function Home() {
-
-//variables useState
-
 
 const [selectedWords, setSelectedWords] = useState([]); //the words the user picked
 
@@ -46,7 +45,9 @@ const [sentence, setSentence] = useState('Dummy GPT text');
   }
 
   const generateSentence = () => {
-    //TODO
+    // take list of words "selectedWords" and feed it into GPT
+    
+    //stream the output
   }
 
   return (

@@ -1,4 +1,6 @@
 import SentenceBarCSS from './SentenceBar.module.css';
+import GenButton from './GenButton.js';
+import Speech from './Speech.js';
 
 const GPTbar = ({ generatedSentence , genFunc, speakFunc}) => {
     const buttonStyle = {
@@ -12,14 +14,14 @@ const GPTbar = ({ generatedSentence , genFunc, speakFunc}) => {
           </div>
 
           
-          { /*
+          
                 
             <div className={SentenceBarCSS.buttons}>
           <GenButton genFunction={() => genFunc()}/>
           <Speech talk={() => speakFunc()} className={SentenceBarCSS.gptSpeech} style={buttonStyle}/>
           </div>
 
-            */}
+          
         </div>
   
       
