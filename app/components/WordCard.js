@@ -5,11 +5,10 @@ import cardCSS from './WordCard.module.css';
 const WordCard = (props) => {
 
     try {
-        const wordImage = require(`/${props.word}.png`);
-
+        
         return (
             <div className={`${cardCSS[props.wordCardClass]}`} onClick={() => props.clickFunc(props.word)}>
-                <img src={wordImage} alt={props.word}/>
+                <img src={`/${props.word}.png`} alt={props.word}/>
                 <p>{props.word}</p>
             </div>
         );

@@ -24,16 +24,6 @@ const WordsBox = (props) => {
     //FALSE = wordCard
     const folders = [
         {
-            isFolder: true,
-            folderName: 'Pronouns',
-            contents: ['I', "me", 'you', 'we', 'us', 'he', 'she', 'they', "y'all", "them"]
-        },
-        {
-            isFolder: true,
-            folderName: 'Questions',
-            contents: ["who", "what", "where", "when", "why", "how", "how long", ]
-        },
-        {
             isFolder: false,
             wordDisplayed: 'yes'
         },
@@ -42,13 +32,49 @@ const WordsBox = (props) => {
             wordDisplayed: 'no'
         },
         {
+            isFolder: false,
+            wordDisplayed: "help"
+        },
+        {
+            isFolder: true,
+            folderName: 'Pronouns',
+            contents: ['I', "me", 'you', 'we', 'us', 'he', 'she', 'they', "y'all", "them"]
+        },
+        {
+            isFolder: true,
+            folderName: 'Question',
+            contents: ["who", "what", "where", "when", "why", "how", "how long", ]
+        },
+        
+        {
             isFolder: true,
             folderName: 'Food',
             contents: ["breakfast", "lunch", "dinner", "snack", "vegetable", "meat", "apple"]
         },
         {
-            isFolder: false,
-            wordDisplayed: "Help"
+            isFolder: true,
+            folderName: 'Actions',
+            contents: ["be", "eat", "want", "am", "wear", "get", "go","hear","make","pick up", "put", "speak", "take", "wait","feed"]
+        },
+        {
+            isFolder: true,
+            folderName: 'Emotions',
+            contents: ["happy", "sad", "angry", "bad", "good", "excited", "hot", "cold", "hungry", "relaxed", "scared", "surprised", "lost", "bored"]
+        },
+        {
+            isFolder: true,
+            folderName: "Time", 
+            contents: ["today", "tomorrow", "yesterday", "weekend", "afternoon", "morning", "night", "day", "week"]
+        },
+        {
+            isFolder: true,
+            folderName: "Numbers",
+            contents: []
+        },
+        {
+            isFolder: true,
+            folderName: "Body Parts",
+            contents: ["foot", "arm", "leg"]
         }
     ];
 

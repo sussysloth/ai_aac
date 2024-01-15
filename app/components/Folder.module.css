@@ -33,9 +33,9 @@
       border-radius: 10px; /* Apply border-radius to create rounded corners */
   }
   
-  .folder Image {
-    max-height: calc(.5 * ((100vw / 6) - 17px));
-    max-width: calc(.5 * ((100vw / 6) - 17px));
+  .folder img {
+    max-height: calc(.55 * ((100vw / 6) - 17px));
+    max-width: calc(.55 * ((100vw / 6) - 17px));
     margin-top: 10px;
   }
   

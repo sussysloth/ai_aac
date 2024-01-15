@@ -8,12 +8,10 @@ import WordCard from './WordCard.js';
 const Folder = ({ folderName, contents, isOpen, folderClick , wordFunc}) => {
 
     try {
-      const folderImage = require(`/${folderName}.png`);
-      
       return (
         <div className={FolderCSS.big}>
           <div className={FolderCSS.folder} onClick={folderClick}>
-          <Image src={folderImage} alt={folderName}/>
+          <img src={`/${folderName}.png`} alt={folderName}/>
           <h>
             {folderName} {isOpen ? '[-]' : '[+]'}
           </h>

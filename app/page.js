@@ -13,7 +13,7 @@ export default function Home() {
 const [selectedWords, setSelectedWords] = useState([]); //the words the user picked
 
 //the gpt-generated sentence
-const [sentence, setSentence] = useState('Dummy GPT text');
+const [sentence, setSentence] = useState('');
 
   //functions to use
 
@@ -40,21 +40,37 @@ const [sentence, setSentence] = useState('Dummy GPT text');
   }
 
   const GPTtextToSpeech = () => {
-    let speaker = new SpeechSynthesisUtterance(sentence);
+    let speaker = new SpeechSynthesisUtterance(completion);
     window.speechSynthesis.speak(speaker);
   }
 
+  const [RunBool, setRunBool] = useState(false);
+
   const generateSentence = () => {
-    // take list of words "selectedWords" and feed it into GPT
-    
-    //stream the output
+    console.log("inputted value: " + selectedWords.join(", "))
+    setSentence(selectedWords.join(', '));
+    setRunBool(true);
   }
+
+  useEffect(() => {
+    if(RunBool) {
+      console.log("output value has been updated")
+      complete(sentence); //figure out this part
+    }
+  }, [sentence]);
+
+  const { complete, completion } = useCompletion({
+    api: 'api/completion',
+    onResponse: (res) => {
+      console.log(res.status);
+    }
+  });
 
   return (
     
       <>
           <SentenceBar selectedWords={selectedWords} func={doNothing} backFunc={removeLastWord} clearFunc={clearEverything} speechFunc={textToSpeech}/>
-          <GPTbar generatedSentence={sentence} genFunc={generateSentence} speakFunc={GPTtextToSpeech}></GPTbar>
+          <GPTbar generatedSentence={completion} genFunc={generateSentence} speakFunc={GPTtextToSpeech}></GPTbar>
 
           {/* NOW FOR THE LITTLE BLACK BAR SEPARATING THE "OUTPUTS" FROM THE WORDSBOX*/}
 
