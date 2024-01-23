@@ -37,8 +37,105 @@ const WordsBox = (props) => {
         },
         {
             isFolder: true,
+            folderName: 'Quick Chat',
+            contents: ["yes", "no", "hello", "goodbye", "good", "bad", "I can't speak", "thank you", "please", "favorite"]
+        },
+        {
+            isFolder: true,
+            folderName: "Time", 
+            contents: ["now","today", "tomorrow", "yesterday", "afternoon", "morning", "night", "day", "week", "this week", "weekend", "next week", "this month", "hour", "minute"]
+        },
+        {
+            isFolder: true,
             folderName: 'Pronouns',
-            contents: ['I', "me", 'you', 'we', 'us', 'he', 'she', 'they', "y'all", "them"]
+            contents: ['I', "me", 'you', 'we', 'us', 'he', 'she', 'they', "y'all", "them", "my", "your"]
+        },
+        {
+            isFolder: true,
+            folderName: 'Actions',
+            contents: ["be", "like","eat", "want", "am", "wear", "get", "go","hear","make","pick up", "put", "speak", "take", "wait","feed"]
+        },
+
+        {
+            isFolder: true,
+            folderName: 'Food',
+            contents: ["hungry", "want", "dislike", "fruit", "vegetable", "meat", "pizza", "bread", "egg", "croissant", "cereal", "oatmeal", "pasta", "poultry", "beef", "fish", "salt", "tomato sauce", "sandwich", "toast", "cheese", "noodles"]
+        },
+        {
+            isFolder: true,
+            folderName: 'Snacks',
+            contents: ["want", "ice cream", "chocolate", "chips", "cookies", "nuts", "cake", "yogurt", "popsicle", "pretzel"]
+        },
+        {
+            isFolder: true,
+            folderName: "Activities",
+            contents: ["want", "bike", "basketball", "bowling", "video games", "watch TV","puzzle", "bathe", "work", "cook", "exercise", "climb", "run", "celebrate", "swim", "fish"]
+
+        },
+        {
+            isFolder: true,
+            folderName: 'Emotions',
+            contents: ["happy", "sad", "angry", "bad", "good", "excited", "hot", "cold", "hungry", "relaxed", "scared", "surprised", "lost", "bored"]
+        },
+        {
+            isFolder: true,
+            folderName: "Body Parts",
+            contents: ["foot", "arm", "leg"]
+        },
+        {
+            isFolder: true,
+            folderName: "Clothing", 
+            contents: ["t-shirt", "pants", "shorts", "jeans", "jacket", "sweater", "hoodie", "tank top", "pyjamas"]
+        },
+        {
+            isFolder: true,
+            folderName: "Colors",
+            contents: ["black", "white", "red", "yellow", "orange", "green", "dark", "light", "blue", "pink", "color"]
+        },
+        {
+            isFolder: true,
+            folderName: "People",
+            contents: ["my", "your", "family", "grandpa", "grandma","mom", "dad", "sister", "brother", "baby", "child", "aunt", "uncle"]
+        },
+        {
+            isFolder: true,
+            folderName: "Describe", 
+            contents: ["is", "not", "too","large", "small", "same", "old", "fast", "dirty", "loud", "broken", "wet"]
+        },
+        {
+            isFolder: true,
+            folderName: "Kitchen",
+            contents: ["where", "need", "my", "fork", "spoon", "knife", "plate", "cup", "straw", "bowl", "stove", "fridge", "freezer"]
+        },
+        {
+            isFolder: true,
+            folderName: "School",
+            contents: ["pencil", "teacher", "grade","class", "computer", "notebook", "backpack", "glue", "math", "english", "science", "computer science", "history"]
+        },
+        {
+            isFolder: true,
+            folderName: "Animals",
+            contents: ["dog", "cat", "bunny","horse", "sheep", "llama"]
+        },
+        {
+            isFolder: true,
+            folderName: "Technology",
+            contents: ["computer", "laptop", "charger", "battery", "camera", "headphones", "cellphone", "headphones", "iPad"]
+        },
+        {
+            isFolder: true,
+            folderName: "Weather",
+            contents: ["rain", "sun", "snow", "thunder", "cloudy"]
+        },
+        {
+            isFolder: true,
+            folderName: "Places",
+            contents: ["home", "store", "work", "bank", "outside", "inside", "gym", "garden", "school", "climbing gym"]
+        },
+        {
+            isFolder: true,
+            folderName: "Position",
+            contents: ["in", "under", "over", "behind", "in front", "through", "between", "up", "down", "left", "right", "before", "after"]
         },
         {
             isFolder: true,
@@ -48,34 +145,10 @@ const WordsBox = (props) => {
         
         {
             isFolder: true,
-            folderName: 'Food',
-            contents: ["breakfast", "lunch", "dinner", "snack", "vegetable", "meat", "apple"]
-        },
-        {
-            isFolder: true,
-            folderName: 'Actions',
-            contents: ["be", "eat", "want", "am", "wear", "get", "go","hear","make","pick up", "put", "speak", "take", "wait","feed"]
-        },
-        {
-            isFolder: true,
-            folderName: 'Emotions',
-            contents: ["happy", "sad", "angry", "bad", "good", "excited", "hot", "cold", "hungry", "relaxed", "scared", "surprised", "lost", "bored"]
-        },
-        {
-            isFolder: true,
-            folderName: "Time", 
-            contents: ["today", "tomorrow", "yesterday", "weekend", "afternoon", "morning", "night", "day", "week"]
-        },
-        {
-            isFolder: true,
             folderName: "Numbers",
-            contents: []
+            contents: ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
         },
-        {
-            isFolder: true,
-            folderName: "Body Parts",
-            contents: ["foot", "arm", "leg"]
-        }
+        
     ];
 
     return (

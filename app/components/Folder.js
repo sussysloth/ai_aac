@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react';
-import Image from 'next/image'
 import FolderCSS from './Folder.module.css';
 import WordCard from './WordCard.js';
 
