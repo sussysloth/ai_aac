@@ -1,4 +1,4 @@
-GPT3-based AAC application for use in my research project.  im testing the effectiveness of AI-powered AACs on speech-impaired adolescent conversational skills.
+GPT3-based AAC application for use in my AP Research school project.  im testing the effectiveness of AI-powered AACs on speech-impaired adolescent conversational skills.
 
 inspired by Cboard AAC layout and words included, used opensymbols.org symbols ARASAAC and mulberry for images.
 
